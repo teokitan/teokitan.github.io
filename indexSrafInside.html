@@ -16,7 +16,7 @@
 		}
 
 		.bab,
-		.linkec {
+		.linkecCon {
 			position:absolute !important;
 		}
 		
@@ -26,11 +26,14 @@
 			left:0;
 			right:0;
 		}
-
-		.linkec {
+		
+		.linkecCon {
 			z-index:5;
 			bottom:5%;
 			left: 3%;
+		}
+
+		.linkec {
 			font: 15pt Arial;
 			font-weight: 300;
 			text-decoration: none;
@@ -58,7 +61,14 @@
 <div class="contn">
 	<babylon class="bab" model="https://raw.githubusercontent.com/teokitan/teokitan.github.io/master/models/modelSrafInside.glb" templates.main.params.fill-screen="true"></babylon>
 
-	<a href="index.html" class="linkec">See fully!</a>
+	<div class="linkecCon">
+	
+	<a href="index.html" class="linkec">Show all</a>
+	<a href="indexBorkaInside.html" class="linkec">Show drill / attachment inside</a>
+	<a href="indexSrafFull.html" class="linkec">Hide drill</a>
+	<a href="indexSrafInside.html" class="linkec">Hide drill / attachment inside</a>
+		
+	</div>
 </div>
 </body>
 <html>

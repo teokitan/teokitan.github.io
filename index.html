@@ -5,6 +5,10 @@
 	
 	<script type="javascript">
 		console.log();
+		
+		function hideDesc() {
+			document.getElementById("descriptionOver").style.display = 'none';
+		}
 	</script>
 
 	<style>
@@ -17,7 +21,7 @@
 
 		.bab,
 		.linkecCon,
-		.descriptionOver {
+		#descriptionOver {
 			position:absolute !important;
 		}
 		
@@ -34,7 +38,7 @@
 			left: 3%;
 		}
 		
-		.descriptionOver {
+		#descriptionOver {
 			z-index:5;
 			top: 5%;
 			bottom: 12%;
@@ -47,7 +51,7 @@
 			border-radius: 7px;
 		}
 		
-		.descriptionOver p {
+		#descriptionOver p {
 			margin-left: 3%;
 			margin-right: 3%;
 			font-family: Arial, sans-serif;
@@ -55,38 +59,38 @@
 			color: rgb(207,207,207);
 		}
 		
-		.descriptionOver p a:link {
+		#descriptionOver p a:link {
 		  color: rgb(207,207,207);
 		  background-color: transparent;
 		  text-decoration: none;
 		}
 		
-		.descriptionOver p a:visited {
+		#descriptionOver p a:visited {
 		  color: rgb(207,207,207);
 		  background-color: transparent;
 		  text-decoration: none;
 		}
 		
-		.descriptionOver p a:hover {
+		#descriptionOver p a:hover {
 		  color: rgb(160,160,160);
 		  background-color: transparent;
 		  text-decoration: underline;
 		}
 		
-		.descriptionOver p a:active {
+		#descriptionOver p a:active {
 		  color: rgb(207,207,207);
 		  background-color: transparent;
 		  text-decoration: none;
 		}
 		
-		.descriptionOver button {
+		#descriptionOver button {
 			float:right;
 			margin-top: 2%;
 			background: none;
 			border: none;
 		}
 		
-		.descriptionOver button img {
+		#descriptionOver button img {
 			width: 50%;
 			height: 50%;
 		}
@@ -134,8 +138,8 @@
 		
 	</div>
 	
-	<div class="descriptionOver">
-		<button>
+	<div id="descriptionOver">
+		<button onClick="hideDesc()">
 			<img src="xButton.png" />
 		</button>
 		<br>

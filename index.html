@@ -79,16 +79,23 @@
 		  text-decoration: none;
 		}
 		
-		#descriptionOver button {
+		#descriptionOver #btnX {
 			float:right;
 			margin-top: 2%;
 			background: none;
 			border: none;
 		}
 		
-		#descriptionOver button img {
+		#descriptionOver #btnX img {
 			width: 50%;
 			height: 50%;
+		}
+		
+		#descriptionOver .txtTab {
+			margin-left: 2%;
+			margin-top: 2%;
+			background: none;
+			border: none;
 		}
 
 		.linkec {
@@ -135,7 +142,10 @@
 	</div>
 	
 	<div id="descriptionOver">
-		<button onClick="document.getElementById('descriptionOver').style.display='none';">
+		<button class="txtTab">What is it?</button>
+		<button class="txtTab">About us</button>
+		
+		<button id="btnX" onClick="document.getElementById('descriptionOver').style.display='none';">
 			<img src="xButton.png" />
 		</button>
 		<br>
